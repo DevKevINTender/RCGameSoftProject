@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="11987928-d9b7-401c-9c62-0dd55f1ee596" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4014A86C-BEFB-4944-B2B6-C9211C8FD2FC/74/ae26b52f/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4014A86C-BEFB-4944-B2B6-C9211C8FD2FC/aa/bfe577d7/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4014A86C-BEFB-4944-B2B6-C9211C8FD2FC/19/52ea60ad/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4014A86C-BEFB-4944-B2B6-C9211C8FD2FC/28/4df0639f/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Views/TutorialComplete/TutorialCompleteView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Views/TutorialPractice/Instrument/InstrumentCard/InstrumentCardView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Views/TutorialNavPanel/TutorialNavPanelView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachines/TutorialChalengeState/TuttorialChalengeState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4014A86C-BEFB-4944-B2B6-C9211C8FD2FC/2f/9c0a973e/Transform.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Views/TutorialPractice/Pizza/PizzaService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4014A86C-BEFB-4944-B2B6-C9211C8FD2FC/d6/38d440cc/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TutorialPractice/Page/PizzaViewMarker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/IPrefab.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TutorialPractice/Page/TutorialPageService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TutorialPractice/Page/TutorialPageView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Test.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TutorialPractice/Page/InstrumentsPanelMarker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TutorialPractice/Page/Markers/CouriersPanelMarker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TutorialPractice/Courier/CouriersService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TutorialPractice/Courier/Courier/CourierCardFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Services/PrefabsStorageService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TutorialPractice/Instrument/InstrumentCard/InstrumentCardFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TutorialPractice/Pizza/PizzaPartView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachines/TutorialPracticeState/TutorialPracticePizzaCutState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachines/TutorialPracticeState/TutorialPracticeGenerateState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TutorialPractice/Instrument/InstrumentCard/InstrumentCardService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TutorialPractice/Instrument/InstrumentCard/InstrumentCardView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachines/TutorialPracticeState/TutorialPracticeCheckState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TutorialPractice/Pizza/PartsForCheckView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TutorialPractice/Pizza/PizzaView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TutorialPractice/Page/Markers/FullSizePanelMarker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TutorialComplete/TutorialCompleteView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TutorialComplete/TutorialCompleteService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachines/TutorialPracticeState/TutorialPracticeCompleteState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TutorialPractice/Courier/Courier/CourierCardService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TutorialFail/TutorialFailView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TutorialFail/TutorialFailService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachines/TutorialState/TutorialCompleteState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachines/TutorialPracticeState/TutorialPracticeFailState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachines/TutorialState/TutorialStartState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TutorialPractice/Courier/Courier/CourierCardView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachines/TutorialPracticeState/TutorialPracticeState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachines/TutorialState/TutorialInfoState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/SessionManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TutorialInfoPages/TutorialInfoPagesView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TutorialInfoPages/TutorialInfoPagesService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TutorialNavPanel/TutorialNavPanelService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachines/TutorialChalengeState/TuttorialChalengeState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/LevelDataSo/LeveDataSoService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/SessionInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/LevelDataSo/LevelDataSo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/LevelDataSo/LevelDataSl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/LevelDataSo/LevelData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TutorialPractice/Courier/CouriersPanelService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TutorialPractice/Pizza/PizzaService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/TutorialPractice/Instrument/InstrumentsPanelService.cs" />
+        <option value="$USER_HOME$/AppData/Roaming/NuGet/NuGet.Config" />
+        <option value="$PROJECT_DIR$/Packages/manifest.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/LevelDataSo/LevelDataSoService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/LevelData/LevelDataService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/MenuManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/TuttorialManager.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Vxtjy12PfZRjHLN74Rffrwmb7w" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="RiderNuGetOptionsPageId" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="11987928-d9b7-401c-9c62-0dd55f1ee596" name="Default Changelist" comment="" />
+      <created>1695789702634</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1695789702634</updated>
+      <workItem from="1695789703835" duration="13494000" />
+      <workItem from="1695883924666" duration="5673000" />
+      <workItem from="1696230870346" duration="8448000" />
+      <workItem from="1696401272214" duration="7164000" />
+      <workItem from="1696478820925" duration="36638000" />
+      <workItem from="1697431357701" duration="10634000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="794" y="221" key="RiderGenerateDialog" timestamp="1697437435081">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="221" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1697437435081" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1697459612119">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1697459612119" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1696488611153">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1696488611153" />
+  </component>
+</project>
