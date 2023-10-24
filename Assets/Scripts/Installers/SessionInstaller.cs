@@ -1,11 +1,10 @@
+using Assets.Scripts.Services;
 using Data;
 using Services;
 using StateMachines;
-using UnityEngine;
 using Views.Pages;
 using Views.TutorialComplete;
 using Views.TutorialFail;
-using Views.TutorialPractice;
 using Views.TutorialPractice.Curier;
 using Views.TutorialPractice.Curier.Curier;
 using Views.TutorialPractice.Instrument;
@@ -18,6 +17,22 @@ public class SessionInstaller : MonoInstaller
     public override void InstallBindings()
     {
         InstallData();
+        InstallService();
+        InstallState();
+
+        Container.Bind<StateMachine>().AsSingle();
+    }
+
+    public void InstallData()
+    {
+        /*LevelDataSo levelDataSo = new LevelDataSo() {correctAnswer = 2, answerVariants = {2,4}};
+        Container.Bind<LevelDataSo>().FromInstance(levelDataSo).AsSingle();*/
+        Container.Bind<LevelDataService>().AsSingle();
+
+    }
+
+    public void InstallService()
+    {
         Container.Bind<PrefabsStorageService>().AsSingle();
         Container.Bind<InstrumentCardFactory>().AsSingle();
         Container.Bind<CourierCardFactory>().AsSingle();
@@ -29,7 +44,11 @@ public class SessionInstaller : MonoInstaller
         Container.Bind<TutorialFailService>().AsSingle();
         Container.Bind<TutorialInfoPagesService>().AsSingle();
         Container.Bind<TutorialNavPanelService>().AsSingle();
+        Container.Bind<TuttorialChalengeSetLevelService>().AsSingle();
+    }
 
+    private void InstallState()
+    {
         Container.Bind<TutorialStartState>().AsSingle();
         Container.Bind<TutorialInfoState>().AsSingle();
         Container.Bind<TutorialPracticeGenerateState>().AsSingle();
@@ -37,16 +56,7 @@ public class SessionInstaller : MonoInstaller
         Container.Bind<TutorialPracticeCheckState>().AsSingle();
         Container.Bind<TutorialPracticeCompleteState>().AsSingle();
         Container.Bind<TutorialPracticeFailState>().AsSingle();
-
-        Container.Bind<StateMachine>().AsSingle();
+        Container.Bind<TuttorialChalengeState>().AsSingle();
     }
 
-    public void InstallData()
-    {
-        /*LevelDataSo levelDataSo = new LevelDataSo() {correctAnswer = 2, answerVariants = {2,4}};
-        Container.Bind<LevelDataSo>().FromInstance(levelDataSo).AsSingle();*/
-        Container.Bind<LevelDataService>().AsSingle();
-        
-    }
-    
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 namespace Views.TutorialPractice.Curier.Curier
@@ -8,9 +9,11 @@ namespace Views.TutorialPractice.Curier.Curier
     public class CourierCardView : MonoBehaviour
     {
         [SerializeField] private List<GameObject> messages = new List<GameObject>();
+        [SerializeField] private TextMeshProUGUI _question;
 
-        public void ActivateView()
+        public void ActivateView(int answer)
         {
+            _question.text = answer.ToString();
             ShowMessge(1);
         }
         

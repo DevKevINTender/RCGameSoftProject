@@ -16,6 +16,7 @@ public class PizzaService
     private LevelData _levelData;
     private TutorialPageService _tutorialPageService;
     private PrefabsStorageService _prefabsStorageService;
+   
     
     [Inject]
     public  void Constructor(LevelDataService levelDataService, TutorialPageService tutorialPageService, PrefabsStorageService prefabsStorageService)
@@ -28,13 +29,15 @@ public class PizzaService
     public void ActivateService()
     {
         _pizzaView = MonoBehaviour.Instantiate(_prefabsStorageService.GetPrefabByType<PizzaView>(), _tutorialPageService.GetTransformByMarker<PizzaViewMarker>());
+        _pizzaView.InitView();
 
     }
 
     public void SetPizzaCutedInstruction(Action pizzaCuted)
     {
         _pizzaCuted = pizzaCuted;
-        _pizzaView.PizzaCut(_levelData.currentAnswer, PizzCuted);
+        int _pizzaCutedCount = _levelData.LevelDataSo.answerVariants[_levelData.currentAnswer];
+        _pizzaView.PizzaCut(_pizzaCutedCount, PizzCuted);
     }
     
     private void PizzCuted()

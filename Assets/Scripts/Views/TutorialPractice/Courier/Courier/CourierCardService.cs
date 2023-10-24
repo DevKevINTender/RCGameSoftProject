@@ -8,10 +8,10 @@ namespace Views.TutorialPractice.Curier.Curier
         private CourierCardView _courierCardView;
         private Transform _target;
         private Action _reachedTarget;
-        public void ActivateService(CourierCardView courierCardView)
+        public void ActivateService(CourierCardView courierCardView, int answer)
         {
             _courierCardView = courierCardView;
-            _courierCardView.ActivateView();
+            _courierCardView.ActivateView(answer);
         }
 
         public void SetTargetToCheckInstructions(Transform target, Action reachedTarget)

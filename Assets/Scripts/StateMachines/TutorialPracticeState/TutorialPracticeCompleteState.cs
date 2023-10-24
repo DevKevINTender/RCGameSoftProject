@@ -7,13 +7,15 @@ namespace StateMachines
     public class TutorialPracticeCompleteState: IGameState
     {
         private TutorialCompleteService _tutorialCompleteService;
-        
+        private TuttorialChalengeState _tuttorialChalengeState;
+
         [Inject]
-        public TutorialPracticeCompleteState(TutorialCompleteService tutorialCompleteService)
+        public TutorialPracticeCompleteState(TutorialCompleteService tutorialCompleteService, TuttorialChalengeState tuttorialChalengeState)
         {
             _tutorialCompleteService = tutorialCompleteService;
+            _tuttorialChalengeState = tuttorialChalengeState;
         }
-        
+
         public void Enter()
         {
             _tutorialCompleteService.ActivateService();

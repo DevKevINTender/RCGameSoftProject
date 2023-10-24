@@ -1,4 +1,6 @@
-﻿using Services;
+﻿using Assets.Scripts.Services;
+using Services;
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Views.TutorialPractice.Page;
@@ -11,12 +13,14 @@ namespace Views.TutorialComplete
         private TutorialCompleteView _tutorialCompleteView;
         private TutorialPageService _tutorialPageService;
         private PrefabsStorageService _prefabsStorageService;
-        
+        private TuttorialChalengeSetLevelService _tuttorialChalengeService;
+
         [Inject]
-        public void Construct(TutorialPageService tutorialPageService, PrefabsStorageService prefabsStorageService)
+        public void Construct(TutorialPageService tutorialPageService, PrefabsStorageService prefabsStorageService, TuttorialChalengeSetLevelService tuttorialChalengeService)
         {
             _tutorialPageService = tutorialPageService;
             _prefabsStorageService = prefabsStorageService;
+            _tuttorialChalengeService = tuttorialChalengeService;
         }
 
         public void ActivateService()
@@ -24,12 +28,24 @@ namespace Views.TutorialComplete
             TutorialCompleteView tutorialCompleteViewPb = _prefabsStorageService.GetPrefabByType<TutorialCompleteView>();
             Transform anchorPanel = _tutorialPageService.GetTransformByMarker<FullSizePanelMarker>();
             _tutorialCompleteView = MonoBehaviour.Instantiate(tutorialCompleteViewPb, anchorPanel);
-            _tutorialCompleteView.ActivateView(Restart);
+            _tutorialCompleteView.ActivateView(Restart, StartTuttorialChalenge, OpenMenu);
+
         }
 
         private void Restart()
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
+        private void StartTuttorialChalenge()
+        {
+            _tuttorialChalengeService.CompleteLevel();
+            SceneManager.LoadScene((int)Scenes.TuttorialChalenge);
+        }
+
+        private void OpenMenu()
+        {
+            SceneManager.LoadScene((int)Scenes.Menu);
         }
     }
 }

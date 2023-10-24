@@ -1,5 +1,7 @@
+using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Data
@@ -8,8 +10,11 @@ namespace Data
     {
         private const string PlayerPrefsKey = "HeroDataList";
         private LevelDataSl _levelDataSl;
+       
         private string path = "ScrObj/";
         private List<LevelDataSo> list = new List<LevelDataSo>();
+
+        private LevelData _levelData;
 
         public LevelDataService()
         {
@@ -53,9 +58,33 @@ namespace Data
 
         public LevelData GetCurrentLevelData()
         {
-            LevelData levelData = new LevelData();
-            levelData.LevelDataSo = list[_levelDataSl.currentLevel];
-            return levelData;
+            if(_levelData == null) _levelData = new LevelData();
+            _levelData.LevelDataSo = list[_levelDataSl.currentLevel];
+            _levelData.LevelDataSl = _levelDataSl;
+            return _levelData;
+        }
+
+        internal void SetCurrentLevel(int id)
+        {
+            if(list.Count > id)
+            {
+                _levelDataSl.currentLevel = id;
+                SaveLevelData();
+            }
+        }
+
+        internal void SetCurrentAnswer(int id)
+        {
+           _levelData.currentAnswer = id;
+        }
+
+        internal void RaiseLevel()
+        {
+            if(list.Count > _levelData.LevelDataSl.currentLevel + 1)
+            {
+                _levelData.LevelDataSl.currentLevel++;
+                SaveLevelData();
+            }
         }
     }
 }

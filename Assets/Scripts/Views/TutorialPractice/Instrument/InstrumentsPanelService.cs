@@ -14,8 +14,7 @@ namespace Views.TutorialPractice.Instrument
     {
         private TutorialPageService _tutorialPageService;
         private InstrumentCardFactory _instrumentCardFactory;
-        private LevelData _levelData;
-        
+        private LevelDataService _levelDataService;
         private List<InstrumentCardService> _instrumentCardServices = new List<InstrumentCardService>();
 
         private Action _instrumentSelected;
@@ -26,7 +25,8 @@ namespace Views.TutorialPractice.Instrument
         {
             _tutorialPageService = tutorialPageService;
             _instrumentCardFactory = instrumentCardFactory;
-            _levelData = levelDataService.GetCurrentLevelData();
+            _levelDataService = levelDataService;
+        
         }
         
         public void ActivateService()
@@ -44,19 +44,21 @@ namespace Views.TutorialPractice.Instrument
         
         private void SelectInstrument(int id)
         {
-            _levelData.currentAnswer = id;
+            _levelDataService.SetCurrentAnswer(id);
             Debug.Log("Click: " + id);
             _instrumentSelected?.Invoke();
         }
         
         private void CreateInstrumentCardList()
         {
-            for (int i = 0; i < _levelData.LevelDataSo.answerVariants.Count; i++)
+            LevelData levelData = _levelDataService.GetCurrentLevelData();
+
+            for (int i = 0; i < levelData.LevelDataSo.answerVariants.Count; i++)
             {
-                int answerId = i;
-                int answer = _levelData.LevelDataSo.answerVariants[i];
+                int answerVariantId = i;
+                int answerVariant = levelData.LevelDataSo.answerVariants[i];
                 Transform anchor = _tutorialPageService.GetTransformByMarker<InstrumentsPanelMarker>();
-                InstrumentCardService newCardService = _instrumentCardFactory.CreateInstrumentCard(answerId, answer, anchor); 
+                InstrumentCardService newCardService = _instrumentCardFactory.CreateInstrumentCard(answerVariantId, answerVariant, anchor); 
                 _instrumentCardServices.Add(newCardService);
             }
         }
